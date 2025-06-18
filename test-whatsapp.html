@@ -1,1 +1,114 @@
- 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test WhatsApp Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .test-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .test-button:hover {
+            transform: scale(1.05);
+        }
+        .info {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .phone-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #25D366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test WhatsApp Link</h1>
+        
+        <div class="info">
+            <h3>Informasi Test:</h3>
+            <p><strong>Nomor Telepon:</strong> <span class="phone-number">+62 821-2742-8365</span></p>
+            <p><strong>Format URL:</strong> https://wa.me/6282127428365</p>
+        </div>
+
+        <h3>Test Link WhatsApp:</h3>
+        
+        <a href="https://wa.me/6282127428365" class="test-button" target="_blank">
+            📱 Test WhatsApp Web
+        </a>
+        
+        <a href="whatsapp://send?phone=6282127428365" class="test-button">
+            📲 Test WhatsApp App (Mobile)
+        </a>
+        
+        <div class="info">
+            <h3>Hasil Test:</h3>
+            <p>✅ Jika link berfungsi: Akan membuka WhatsApp dengan nomor yang benar</p>
+            <p>❌ Jika link bermasalah: Akan muncul error atau halaman tidak ditemukan</p>
+        </div>
+        
+        <div class="info">
+            <h3>Debug Info:</h3>
+            <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+            <p><strong>Platform:</strong> <span id="platform"></span></p>
+            <p><strong>Mobile:</strong> <span id="isMobile"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Debug info
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        document.getElementById('platform').textContent = navigator.platform;
+        document.getElementById('isMobile').textContent = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 'Ya' : 'Tidak';
+        
+        // Test WhatsApp link
+        function testWhatsAppLink() {
+            const phoneNumber = "6282127428365";
+            const message = "Test pesan dari website";
+            const encodedMessage = encodeURIComponent(message);
+            
+            console.log('Testing WhatsApp link...');
+            console.log('Phone:', phoneNumber);
+            console.log('Message:', message);
+            console.log('Encoded Message:', encodedMessage);
+            
+            const webUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            const appUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodedMessage}`;
+            
+            console.log('Web URL:', webUrl);
+            console.log('App URL:', appUrl);
+            
+            // Test web URL
+            window.open(webUrl, '_blank');
+        }
+        
+        // Auto test after 2 seconds
+        setTimeout(testWhatsAppLink, 2000);
+    </script>
+</body>
+</html> 
