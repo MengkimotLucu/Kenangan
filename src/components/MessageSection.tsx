@@ -9,7 +9,7 @@ const MessageSection = () => {
     "Terkadang, aku berpikir… Bagaimana bisa seseorang yang awalnya hanya nama di layar, kini menjadi salah satu alasan mengapa aku bisa tersenyum lebih sering? Kita mungkin tidak selalu sempurna dalam mengekspresikan, atau dalam menjaga waktu, tapi aku yakin, rasa yang ada tidak pernah setengah.",
     "Terima kasih untuk segala hal kecil yang kamu lakukan—yang mungkin kamu anggap sepele, tapi sangat berarti bagiku. Terima kasih karena tetap tinggal saat kamu bisa saja pergi. Terima kasih karena menjadi tempat pulang, meski tidak pernah meminta.",
     "Jika waktu mengizinkan kita berjalan lebih jauh, aku harap kita tidak hanya saling menemukan, tapi juga saling menjaga. Dan jika suatu hari kita harus berjalan pada arah yang berbeda, aku hanya ingin kamu tahu satu hal: Kamu pernah membuat bagian hidupku jauh lebih baik hanya dengan menjadi kamu.",
-    "Semoga apapun yang kamu jalani ke depan, kamu tetap diberkahi dengan hal-hal yang indah. Dan bila sesekali kamu merasa lelah, semoga ada suara di dalam hatimu yang selalu mengingatkan, bahwa kamu pernah dicintai dengan tulus.",
+    "Semoga apapun yang kamu jalani ke depan, kamu tetap diberkahi dengan hal-hal yang indah. Dan bila sesekali kamu merasa lelah, semoga ada suara di dalam hatimu yang selalu mengingatkan.",
     "Jaga dirimu baik-baik, Anggun. Kisah ini mungkin belum selesai, tapi sudah cukup untuk dikenang dengan senyum."
   ];
 
